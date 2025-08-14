@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "height": 175,
+    "weight": 70,
+    "bmi": 22.86
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "height": 162,
+    "weight": 55,
+    "bmi": 20.96
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "height": 180,
+    "weight": 85,
+    "bmi": 26.23
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "height": 168,
+    "weight": 62,
+    "bmi": 21.97
+  },
+  {
+    "id": 5,
+    "name": "David Wilson",
+    "height": 172,
+    "weight": 78,
+    "bmi": 26.36
+  },
+  {
+    "id": 6,
+    "name": "Lisa Anderson",
+    "height": 165,
+    "weight": 58,
+    "bmi": 21.30
+  },
+  {
+    "id": 7,
+    "name": "Robert Taylor",
+    "height": 178,
+    "weight": 92,
+    "bmi": 29.04
+  },
+  {
+    "id": 8,
+    "name": "Jennifer Martinez",
+    "height": 170,
+    "weight": 65,
+    "bmi": 22.49
+  },
+  {
+    "id": 9,
+    "name": "Christopher Garcia",
+    "height": 175,
+    "weight": 80,
+    "bmi": 26.12
+  },
+  {
+    "id": 10,
+    "name": "Amanda Rodriguez",
+    "height": 163,
+    "weight": 52,
+    "bmi": 19.57
+  }
+]
