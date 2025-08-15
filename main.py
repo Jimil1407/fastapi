@@ -24,3 +24,12 @@ def sort_patients(sort_by: str = Query(..., description="The field to sort by"),
         sorted_patients.reverse()
     
     return sorted_patients
+
+@app.post("/add_patient")
+def add_patient(patient: dict):
+    with open("patients.json", "r") as f:
+        patients = json.load(f)
+    patients.append(patient)
+    with open("patients.json", "w") as f:
+        json.dump(patients, f)
+    return {"message": "Patient added successfully"}
