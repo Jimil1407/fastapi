@@ -33,3 +33,24 @@ def add_patient(patient: dict):
     with open("patients.json", "w") as f:
         json.dump(patients, f)
     return {"message": "Patient added successfully"}
+
+@app.get("/get_patient")
+def get_patient(name: str):
+    with open("patients.json", "r") as f:
+        patients = json.load(f)
+    for patient in patients:
+        if patient["name"] == name:
+            return patient
+    return {"error": "Patient not found"}
+
+@app.delete("/delete_patient")      
+def delete_patient(name: str):
+    with open("patients.json", "r") as f:
+        patients = json.load(f)
+    for patient in patients:
+        if patient["name"] == name:
+            patients.remove(patient)
+            with open("patients.json", "w") as f:
+                json.dump(patients, f)
+            return {"message": "Patient deleted successfully"}
+    return {"error": "Patient not found"}
